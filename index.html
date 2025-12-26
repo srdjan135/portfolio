@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml" />
+  </head>
+  <body>
+    <nav>
+      <h4><span>Srđan</span> Mihić</h4>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#expirience">Expirience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-switch">
+        <input type="checkbox" id="darkmode-toggle" />
+        <label for="darkmode-toggle">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </label>
+      </div>
+    </nav>
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <div>
+            <h3>Hello, I'm</h3>
+            <h1>Srđan Mihić</h1>
+            <h3>And I'm <span id="typing"></span></h3>
+            <p>
+              Specialized in developing full stack applications using the MEAN
+              stack, with a focus on performance, scalability, and clean
+              architecture.
+            </p>
+            <a href="assets/CV.pdf" download>
+              <button>Download CV</button>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/assets/hero.png" alt="hero-image" />
+        </div>
+      </section>
+      <section id="about">
+        <div class="wrapper">
+          <div class="about-image">
+            <img src="/assets/about.jpg" alt="about-image" />
+          </div>
+          <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+              I am a Full Stack Developer specializing in the MEAN stack, with a
+              focus on building scalable, high-performance, and maintainable web
+              applications. I enjoy turning complex ideas into clean and
+              efficient solutions, paying close attention to both user
+              experience and application architecture. Always eager to learn and
+              improve, I continuously work on real-world projects to sharpen my
+              skills and stay up to date with modern web technologies. I have
+              experience developing responsive Angular applications, designing
+              RESTful APIs, and working with MongoDB to create reliable and
+              efficient data models. I value clean code, best practices, and
+              well-structured systems, and I enjoy collaborating, solving
+              problems, and continuously refining my approach to software
+              development.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h1 class="title">My <span>Skills</span></h1>
+        <div class="wrapper">
+          <div class="frontend-skills skills">
+            <div>
+              <h1>Frontend Skills</h1>
+              <div class="inner-wrapper" style="--level: 95%">
+                <div class="language">
+                  <span>HTML</span>
+                  <span>95%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 90%">
+                <div class="language">
+                  <span>CSS/SCSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 85%">
+                <div class="language">
+                  <span>JavaScript</span>
+                  <span>85%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 90%">
+                <div class="language">
+                  <span>TypeScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 80%">
+                <div class="language">
+                  <span>Angular</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="backend-skills skills">
+            <div>
+              <h1>Backend Skills</h1>
+              <div class="inner-wrapper" style="--level: 80%">
+                <div class="language">
+                  <span>Node.JS</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 80%">
+                <div class="language">
+                  <span>Express.JS</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 85%">
+                <div class="language">
+                  <span>REST/GraphQl API</span>
+                  <span>85%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="database-skills skills">
+            <div>
+              <h1>Database Skills</h1>
+              <div class="inner-wrapper" style="--level: 80%">
+                <div class="language">
+                  <span>MongoDB</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 65%">
+                <div class="language">
+                  <span>MySql</span>
+                  <span>65%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tools skills">
+            <div>
+              <h1>Tools</h1>
+              <div class="inner-wrapper" style="--level: 90%">
+                <div class="language">
+                  <span>Git & Github / Bitbucket</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="inner-wrapper" style="--level: 70%">
+                <div class="language">
+                  <span>Postman</span>
+                  <span>70%</span>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h1 class="title">My <span>Projects</span></h1>
+        <div class="wrapper">
+          <div class="card">
+            <div class="card-title">
+              <h1>Social Media App</h1>
+            </div>
+            <div class="card-content">
+              <p>
+                A social network that allows users to create posts, comment,
+                like, and follow other users, with secure authentication,
+                real-time notifications, and a real-time chat system.
+              </p>
+              <div class="inner-wrapper">
+                <span class="chips">Angular</span>
+                <span class="chips">Express.JS</span>
+                <span class="chips">MongoDB</span>
+              </div>
+              <a href="https://github.com/srdjan135" target="_blank">
+                <button>
+                  See On Github <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h1>Social Media App</h1>
+            </div>
+            <div class="card-content">
+              <p>
+                A social network that allows users to create posts, comment,
+                like, and follow other users, with secure authentication,
+                real-time notifications, and a real-time chat system.
+              </p>
+              <div class="inner-wrapper">
+                <span class="chips">Angular</span>
+                <span class="chips">Express.JS</span>
+                <span class="chips">MongoDB</span>
+              </div>
+              <a href="https://github.com/srdjan135" target="_blank">
+                <button>
+                  See On Github <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h1>Social Media App</h1>
+            </div>
+            <div class="card-content">
+              <p>
+                A social network that allows users to create posts, comment,
+                like, and follow other users, with secure authentication,
+                real-time notifications, and a real-time chat system.
+              </p>
+              <div class="inner-wrapper">
+                <span class="chips">Angular</span>
+                <span class="chips">Express.JS</span>
+                <span class="chips">MongoDB</span>
+              </div>
+              <a href="https://github.com/srdjan135" target="_blank">
+                <button>
+                  See On Github <i class="fa-solid fa-arrow-down"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="expirience">
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-inner">
+          <div class="wrapper">
+            <h3>Frontend Angular Developer (Freelance)</h3>
+            <span>Workanizers · 1 Year</span>
+          </div>
+
+          <ul class="stepper-list">
+            <li>
+              Worked as a Frontend Angular Developer on a long-term freelance
+              project
+            </li>
+            <li>
+              Developed and maintained Angular applications with clean and
+              scalable architecture
+            </li>
+            <li>Built reusable components, services, and UI logic</li>
+            <li>Handled asynchronous data flows</li>
+            <li>
+              Collaborated indirectly with the client to implement new features
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="title">Contact <span>Me</span></h1>
+        <form id="contactForm" method="post" action="#">
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+
+          <input type="email" name="email" placeholder="Email" required />
+
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Message..."
+            required
+            minlength="10"
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 <span>Srđan Mihić</span> · Full Stack Developer</p>
+
+      <div class="footer-links">
+        <a href="https://github.com/srdjan135" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/srdjan-mihic-8b52153a1/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://facebook.com/srdjan.mihic.794" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("rgt6N5A5QheG68UVo");
+      })();
+    </script>
+  </body>
+</html>

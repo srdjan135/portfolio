@@ -121,6 +121,54 @@
   #contact form {
     width: 90%;
   }
+
+  @supports (animation-timeline: view()) {
+    #about .about-image {
+      transform: translateY(-30px) scale(1.1);
+    }
+
+    #about .about-content {
+      transform: translateY(30px) scale(1.1);
+    }
+  }
+
+  @keyframes about-in {
+    to {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @supports (animation-timeline: view()) {
+    #skills .skills:nth-child(odd) {
+      transform: translateY(-40px) scale(1.05);
+    }
+
+    #skills .skills:nth-child(even) {
+      transform: translateY(40px) scale(1.05);
+    }
+  }
+
+  @keyframes skill-in {
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @supports (animation-timeline: view()) {
+    #projects .card:nth-child(1) {
+      transform: translateX(-30px) scale(1.05);
+    }
+
+    #projects .card:nth-child(2) {
+      transform: translateY(30px) scale(1.05);
+    }
+
+    #projects .card:nth-child(3) {
+      transform: translateX(30px) scale(1.05);
+    }
+  }
 }
 
 @media (max-width: 500px) {
@@ -135,6 +183,7 @@
     justify-content: start;
     gap: 2rem;
   }
+  
   #hero .hero-content div h1 {
     font-size: 2rem;
   }
@@ -157,6 +206,10 @@
 
   #about .wrapper .about-content p {
     font-size: 0.9rem;
+  }
+
+  #skills .wrapper .skills div.content {
+    padding: 1rem 2rem !important;
   }
 
   #skills .wrapper .skills div h1 {
@@ -213,4 +266,5 @@
     font-size: 0.8rem;
   }
 }
+
 

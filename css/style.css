@@ -133,16 +133,6 @@ nav ul li.active a {
   color: var(--primary);
 }
 
-nav ul li:last-child:hover a,
-nav ul li:last-child:active a {
-  color: initial;
-}
-
-nav ul li:last-child:hover::after,
-nav ul li:last-child:active::after {
-  width: 0;
-}
-
 .theme-switch {
   display: inline-block;
   position: relative;
@@ -236,7 +226,7 @@ section {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-10px);
   animation: hero-content-in 0.9s ease-out forwards;
   animation-delay: 0.4s;
 }
@@ -293,7 +283,7 @@ section {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transform: translateX(60px);
+  transform: translateX(10px);
   animation: hero-image-in 0.9s ease-out forwards;
   animation-delay: 0.6s;
 }
@@ -760,3 +750,4 @@ footer div a i {
 footer div a:hover {
   color: var(--primary);
 }
+

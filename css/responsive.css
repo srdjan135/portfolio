@@ -125,7 +125,7 @@
 
 @media (max-width: 500px) {
   main #projects {
-    height: 195vh !important;
+    height: 205vh !important;
   }
 }
 
@@ -213,3 +213,4 @@
     font-size: 0.8rem;
   }
 }
+

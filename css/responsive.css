@@ -267,4 +267,9 @@
   }
 }
 
+@media (max-width: 400px) {
+  main #skills .wrapper .skills div.content {
+    padding: 1rem 0 !important;
+  }
+}
 

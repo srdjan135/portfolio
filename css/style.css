@@ -529,6 +529,11 @@ section {
 
 #projects .wrapper .card .card-content p {
   margin-top: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #projects .wrapper .card .card-content .inner-wrapper {
@@ -750,4 +755,5 @@ footer div a i {
 footer div a:hover {
   color: var(--primary);
 }
+
 

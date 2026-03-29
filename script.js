@@ -1,5 +1,6 @@
 let nav = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
+const skillsSection = document.querySelector("#skills");
 const navLinks = document.querySelectorAll("nav ul li");
 const hamburger = document.getElementById("hamburger");
 const navListOfLinks = document.querySelector("nav ul");
@@ -50,9 +51,37 @@ window.addEventListener("scroll", () => {
   });
 });
 
-hamburger.addEventListener("click", () => {
-  console.log(navListOfLinks);
+const observer1 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+  },
+);
 
+sections.forEach((section) => {
+  observer1.observe(section);
+});
+
+window.addEventListener("scroll", () => {
+  const rect = skillsSection.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  let progress = 1.1 - rect.top / windowHeight;
+
+  progress = Math.max(0, Math.min(1, progress));
+  progress = 1 - Math.pow(1 - progress, 2);
+  skillsSection.style.setProperty("--progress", progress);
+});
+
+hamburger.addEventListener("click", () => {
   navListOfLinks.classList.toggle("activeMobile");
   hamburger.classList.toggle("activeMenu");
 });
@@ -110,8 +139,7 @@ function sendEmail(formData) {
       },
       function (error) {
         alert("Failed to send message. Please try again.");
-        console.error(error);
-      }
+      },
     );
 }
 

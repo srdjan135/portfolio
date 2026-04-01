@@ -232,6 +232,7 @@ section.show {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 0;
   opacity: 0;
   transform: translateX(-10px);
   animation: hero-content-in 0.9s ease-out forwards;
@@ -289,6 +290,7 @@ section.show {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 1;
   opacity: 0;
   transform: translateX(10px);
   animation: hero-image-in 0.9s ease-out forwards;
@@ -313,7 +315,7 @@ section.show {
   min-height: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 #about .wrapper .about-image {
@@ -327,15 +329,15 @@ section.show {
 }
 
 #about .wrapper .about-image img {
-  width: 75%;
-  height: 100%;
+  width: 60%;
+  height: auto;
 }
 
 #about .wrapper .about-image::before {
   content: "";
   position: absolute;
   top: -7%;
-  left: 59%;
+  left: 52%;
   width: 35%;
   height: 35%;
   background-color: var(--primary);
@@ -346,7 +348,7 @@ section.show {
   content: "";
   position: absolute;
   top: 78%;
-  left: 3%;
+  left: 12%;
   width: 30%;
   height: 30%;
   background-color: transparent;

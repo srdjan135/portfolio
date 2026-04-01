@@ -6,6 +6,7 @@ const hamburger = document.getElementById("hamburger");
 const navListOfLinks = document.querySelector("nav ul");
 
 const themeToggle = document.getElementById("darkmode-toggle");
+const heroImage = document.querySelector(".hero-image img");
 
 const texts = ["Full Stack Developer", "MEAN Stack Developer"];
 
@@ -96,6 +97,12 @@ document.querySelectorAll("nav ul li").forEach((link) => {
 themeToggle.addEventListener("click", () => {
   themeToggle.classList.toggle("active");
   document.body.classList.toggle("light-theme");
+
+  if (document.body.classList.contains("light-theme")) {
+    heroImage.setAttribute("src", "./assets/hero2.png");
+  } else {
+    heroImage.setAttribute("src", "./assets/hero1.png");
+  }
 });
 
 function typeEffect() {
